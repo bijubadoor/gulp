@@ -49,29 +49,6 @@ gulp.task('injectPartials', () => {
         .pipe(gulp.dest("."));
 });
 
-// gulp.task('replacePaths', () => {
-//     var path1 = gulp.src('./*/pages/*/*.html', {base: './'})
-//         .pipe(replace('="assets/', '="../../../assets/'))
-//         .pipe(replace('href="demo_1/', 'href="../../../demo_1/'))
-//         .pipe(replace('href="demo_2/', 'href="../../../demo_2/'))
-//         .pipe(replace('href="pages/', 'href="../../pages/'))
-//         .pipe(replace('href="dashboard-one.html', 'href="../../dashboard-one.html'))
-//         .pipe(gulp.dest('.'));
-//     var path2 = gulp.src('./*/pages/*.html', {base: './'})
-//         .pipe(replace('="assets/', '="../../assets/'))
-//         .pipe(replace('href="demo_1/', 'href="../../demo_1/'))
-//         .pipe(replace('href="demo_2/', 'href="../../demo_2/'))
-//         .pipe(replace('href="pages/', 'href="../../pages/'))
-//         .pipe(replace('href="dashboard-one.html', 'href="../dashboard-one.html'))
-//         .pipe(gulp.dest('.'));
-//     var path3 = gulp.src('./*/*.html', {base: './'})
-//         .pipe(replace('="assets/', '="../assets/'))
-//         .pipe(replace('href="demo_1/', 'href="../demo_1/'))
-//         .pipe(replace('href="demo_2/', 'href="../demo_2/'))
-//         .pipe(gulp.dest('.'));
-//     return merge(path1, path2, path3);
-// });
-
 gulp.task('injectCommonAssets', () => {
     return gulp.src([
         './**/*.html'
