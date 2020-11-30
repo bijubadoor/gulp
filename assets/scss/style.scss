@@ -1,0 +1,14 @@
+
+// Booststrap functions and variables
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+
+// Template variables
+@import './variables';
+
+// SCSS compass funtions
+@import '../../node_modules/compass-mixins/lib/compass';
+@import '../../node_modules/compass-mixins/lib/animate';
+
+// Bootstrap main SCSS
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
